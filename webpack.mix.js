@@ -15,6 +15,4 @@ mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css');
 
-
-    mix.disableSuccessNotifications();   
- mix.browserSync('etoro.test');
+mix.disableSuccessNotifications();
