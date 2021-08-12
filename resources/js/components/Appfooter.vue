@@ -1,18 +1,16 @@
 <template>
-     <div id="container" class="container py-3">
-       <div class="row">
-        <div id="contacts">
-          <div id="contacts--contact" class="alert alert-success"> 
-            <p>{{ mail }}</p>
-            <p>{{ phone }}</p>
-          </div>
 
-        </div>
-        <div id="mentions" class="alert alert-danger">
-          <p>{{ mention }}</p>
-        </div>
-      </div>
-   </div>
+     <!-- <div id="container" class="container-fluid fixed-bottom bg-info">   -->
+      <div class="container-fluid bg-info ">
+     <div >
+              <div id="contacts--contact"> 
+                <p >{{ mail }}</p>
+                <p >{{ phone }}</p>
+                 <p>{{ mention }}</p>
+              </div>
+    </div>
+</div>
+
 </template>
 
 
@@ -23,9 +21,9 @@
         },
           data(){
     return{
-      mail : 'xavier.seignard+drangies@gmail.com',
-      phone : '06.00.00.00.00',
-      mention : '2018 | mentions légales'
+      mail : 'ali.saied83@gmail.com',
+      phone : '00963947982876',
+      mention : '2021 | Salamieh, Syria'
     }
   }
     }

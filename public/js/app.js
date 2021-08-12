@@ -1861,17 +1861,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
   },
   data: function data() {
     return {
-      mail: 'xavier.seignard+drangies@gmail.com',
-      phone: '06.00.00.00.00',
-      mention: '2018 | mentions légales'
+      mail: 'ali.saied83@gmail.com',
+      phone: '00963947982876',
+      mention: '2021 | Salamieh, Syria'
     };
   }
 });
@@ -37649,34 +37647,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container py-3", attrs: { id: "container" } },
-    [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { attrs: { id: "contacts" } }, [
-          _c(
-            "div",
-            {
-              staticClass: "alert alert-success",
-              attrs: { id: "contacts--contact" }
-            },
-            [
-              _c("p", [_vm._v(_vm._s(_vm.mail))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.phone))])
-            ]
-          )
-        ]),
+  return _c("div", { staticClass: "container-fluid bg-info " }, [
+    _c("div", [
+      _c("div", { attrs: { id: "contacts--contact" } }, [
+        _c("p", [_vm._v(_vm._s(_vm.mail))]),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "alert alert-danger", attrs: { id: "mentions" } },
-          [_c("p", [_vm._v(_vm._s(_vm.mention))])]
-        )
+        _c("p", [_vm._v(_vm._s(_vm.phone))]),
+        _vm._v(" "),
+        _c("p", [_vm._v(_vm._s(_vm.mention))])
       ])
-    ]
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -37758,7 +37739,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "col-md-12" }, [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
               _vm._v("market Component")
