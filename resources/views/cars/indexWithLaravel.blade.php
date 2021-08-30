@@ -7,17 +7,13 @@
       <a href="/cars/create" class="btn btn-primary">Add a new car &rarr;</a>
       </div>
 <div class="row text-center">
-
-
-
+  
     @foreach ($cars as $car )
     <div class="col-4"> 
     <div class="card border-success m-3" >
-        <div class="card-header bg-transparent border-success">
-          <a href="/cars/{{ $car->id }}" >{{ $car->name }}</a>          
-        </div>
+        <div class="card-header bg-transparent border-success">{{ $car->name }}</div>
         <div class="card-body text-success">
-          <h5 class="card-title"></h5>
+          <h5 class="card-title">{{ $car->created_at ?? 'Null' }}</h5>
           <p class="card-text">{{ $car->description }}</p>
         </div>
         <div class="card-footer bg-transparent border-success">Founded in <b>{{ $car->founded }}</b></div>

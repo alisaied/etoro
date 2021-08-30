@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Car;
-use App\Models\Product;
 use Illuminate\Support\Facades\DB;
 use Prophecy\Promise\ReturnPromise;
-use Symfony\Component\VarDumper\VarDumper;
 
 class CarsController extends Controller
 {
@@ -32,14 +30,10 @@ class CarsController extends Controller
 
         //print_r(Car::all()->avg('founded'));
 
+        $cars = Car::all();
 
-          //$cars = Car::all()->toArray();
-          $cars = Car::all()->toJson();
-          $cars = json_decode($cars);
-        
-          //dd($cars);
       
-       return view('cars.index',['cars' => $cars]);
+        return view('cars.index',['cars' => $cars]);
     }
 
     /**
@@ -91,16 +85,7 @@ class CarsController extends Controller
      */
     public function show($id)
     {
-        $car = Car::find($id);
-        //dd($car);
-        //dd($car->engines);
-        //var_dump($car->productionDate);
-        //var_dump($car->products);
-        $products = Product::find($id);
-
-        //dd($products);
-
-        return view('cars.show')->with('car',$car);
+        //
     }
 
     /**
@@ -151,12 +136,10 @@ class CarsController extends Controller
 
     // }
 
-    public function destroy($id) // destroy($car) better
+    public function destroy($car)
     {
-        $car=Car::find($id)->first();
-        $car->delete();
         // better than the prev. to use less resources
-        //$car->delete();
+        $car->delete();
         return redirect('/cars');
 
     }
