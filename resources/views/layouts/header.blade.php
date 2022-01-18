@@ -33,13 +33,13 @@
             <a class="nav-link {{ request()->is('/') ? 'active': '' }}" href="/">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ request()->is('cars') ? 'active': '' }}" href="cars">Cars</a>
+            <a class="nav-link {{ request()->is('cars') ? 'active': '' }}" href="/cars">Cars</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ request()->is('markets') ? 'active': '' }}" href="markets">Markets</a>
+            <a class="nav-link {{ request()->is('markets') ? 'active': '' }}" href="/markets">Markets</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ request()->is('posts') ? 'active': '' }}" href="posts">Posts</a>
+            <a class="nav-link {{ request()->is('posts') ? 'active': '' }}" href="/posts">Posts</a>
         </li>
         <li class="nav-item">
             <a class="nav-link {{ request()->is('about') ? 'active': '' }}" href="about">About</a>
